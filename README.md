@@ -1,6 +1,6 @@
 <img src="img/Icon-jpg-small.jpg" width="300px">
 
-(c) 2022 Nicholas Outram
+(c) 2022 Nicholas Outram.
 
 # Embedded-Systems
 
@@ -20,7 +20,7 @@ This repository contains both lab materials and code examples for all the Electr
 1. [Glossary](glossary/README.md)
 
 ---
-
+Sam
 
 
 
