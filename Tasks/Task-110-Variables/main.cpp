@@ -27,20 +27,20 @@ int main()
     int count = 0;
     printf("count = %d\n", count);
 
-    // Add one to count
-    count = count + 1;
+    // Add 2 to count
+    count = count + 2;
     printf("New value of count = %d\n", count);
 
     // Char
     char character;
-    character = 'A';
+    character = 65;
     printf("The character %c has the ASCII code %d\n", character, character);
 
     // Short
-    short shortCount = 32766;
-    printf("The value of shortCount is %hd\n", shortCount);
+    int shortCount = 32766;
+    printf("The value of shortCount is %d\n", shortCount);
     shortCount = shortCount + 1;
-    printf("add 1 and shortCount is %hd\n", shortCount);
+    printf("add 1 and shortCount is %d\n", shortCount);
 
     // Long long
     long long NN = 0x12345678ABCD0001LL; //Literal in HEX
