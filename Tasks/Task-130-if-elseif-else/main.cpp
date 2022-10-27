@@ -31,12 +31,27 @@ int main()
         //Test Button A
         if (btnA == 1) {
             redLED = !redLED;    //Toggle RED led
-            count = count + 1;            //Increment count
+            count++;            //Increment count
             disp = count;       //Update display
         }
 
+        if (count==99){
+            count =0;
+        }
+
+        if (ButtonB == 1) {
+            redLED = !redLED;    //Toggle RED led
+            count--;            //Increment count
+            disp = count;       //Update display
+        }
+        
+        if (count <0){
+            count =0;
+        }
         // Slow it down a bit (and debounce the switches)
         wait_us(100000);  
+
+        
     }
 }
 
