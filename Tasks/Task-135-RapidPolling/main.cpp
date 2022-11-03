@@ -48,6 +48,25 @@ int main()
         // UPDATE IF THERE WAS A CHANGE
         // ****************************
 
+
+        // Did both A and B press
+        if ((btnA_curr != btnA_prev) && (btnB_curr != btnB_prev)) {
+            if ((btnA_curr == 1) && (btnB_curr == 1)) {
+                //Button B was pressed!
+                if (count > 0) {
+                    count = 0;
+                }
+            }
+
+            // The previous values is now set to the current
+            btnA_prev = btnA_curr;
+            btnB_prev = btnB_curr;
+
+            //Update display
+            disp = count;
+        }
+
+
         // Did button A change?
         if (btnA_curr != btnA_prev) {
 
@@ -84,6 +103,9 @@ int main()
             disp = count;               
         }
         
+
+
+
         // Slow it down a bit (and debounce the switches)
         wait_us(250000);  
     }
